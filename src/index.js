@@ -14,7 +14,7 @@ const app = express();
 connectDB();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/uploads/media', express.static(path.join('uploads', 'media')));
+app.use('/uploads/images', express.static(path.join('uploads', 'images')));
 
 //Routes
 app.use("/api", restRoutes);
